@@ -13,7 +13,9 @@ contains
         implicit none
         integer :: year
 
-        if (mod(year, 4) /= 0) then
+        if (year < 1582) then
+            print *, "WARNING: The Gregorian calendar was introduced in 1582."
+        else if (mod(year, 4) /= 0) then
             is_leap_year = .false.
         else if (mod(year, 100) == 0) then
             if (mod(year, 400) == 0) then
@@ -32,7 +34,7 @@ contains
         implicit none
         integer :: year
 
-        shorter_leapyear = (mod(year, 4) == 0) .and. ((mod(year, 100) == 0) .and. (mod(year, 400) == 0)
+        shorter_leapyear = ((mod(year, 4) == 0) .and. (mod(year, 100) /= 0)) .or. (mod(year, 400) == 0)
 
     end function shorter_leapyear 
 end program leap_year
