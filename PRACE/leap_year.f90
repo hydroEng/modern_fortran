@@ -28,13 +28,4 @@ contains
         end if
 
     end function is_leap_year
-
-    logical function shorter_leapyear(year)
-
-        implicit none
-        integer :: year
-
-        shorter_leapyear = ((mod(year, 4) == 0) .and. (mod(year, 100) /= 0)) .or. (mod(year, 400) == 0)
-
-    end function shorter_leapyear 
 end program leap_year
