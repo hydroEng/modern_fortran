@@ -10,4 +10,4 @@ data = data.drop(labels = 'r', axis=1)
 
 sns.scatterplot(data = data, s = 4)
 
-plt.savefig('plot.png', dpi = 400)
+plt.savefig('plotQ1-2.png', dpi = 400)
