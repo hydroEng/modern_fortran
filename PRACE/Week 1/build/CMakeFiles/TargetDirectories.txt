@@ -1,0 +1,3 @@
+/home/Taha/Documents/Modern Fortran/PRACE/build/CMakeFiles/hello_fortran.exe.dir
+/home/Taha/Documents/Modern Fortran/PRACE/build/CMakeFiles/edit_cache.dir
+/home/Taha/Documents/Modern Fortran/PRACE/build/CMakeFiles/rebuild_cache.dir
