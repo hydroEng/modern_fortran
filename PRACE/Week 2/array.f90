@@ -12,9 +12,7 @@ program arrays
     vector1 = [ 3.0, 5.0, 7.0 ]
     vector2 = [ (0.5*i - 1.0, i=1, 3) ]
 
-    print *, vector1
-    print *, vector2
+    print *, dot_product(vector, vector1)
+    print *, size(vector1), 'reee', sum(vector1)
 
-    print *, vector1 + vector2
-    
 end program arrays
